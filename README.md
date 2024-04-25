@@ -72,6 +72,10 @@ vim /etc/pam.d/vsftpd
 
 ## 本程序使用方法
 
+### 工具类
+
+![image-20240425100744729](https://wxy-md.oss-cn-shanghai.aliyuncs.com/image-20240425100744729.png)
+
 ### 修改配置文件
 
 ![image-20240425095044445](https://wxy-md.oss-cn-shanghai.aliyuncs.com/image-20240425095044445.png)
@@ -80,7 +84,7 @@ vim /etc/pam.d/vsftpd
 
 可以自己指定配置文件路径,也可以写死配置文件路径
 
-### ![image-20240425095404001](https://wxy-md.oss-cn-shanghai.aliyuncs.com/image-20240425095404001.png)
+![image-20240425095404001](https://wxy-md.oss-cn-shanghai.aliyuncs.com/image-20240425095404001.png)
 
 ### 本地访问代理程序地址
 
