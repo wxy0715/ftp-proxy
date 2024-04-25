@@ -24,7 +24,7 @@ import java.net.*;
 import java.util.*;
 
 public class FtpProxy extends Thread {
-    private final static String defaultConfigFile = "/Users/wangxingyu/wxy/ftp-proxy/src/main/java/com/wxy/proxy/ftpproxy.conf";
+    private static String defaultConfigFile;
 
     final static int DEFAULT_BACKLOG = 50;
     final static int DATABUFFERSIZE = 512;
@@ -80,6 +80,12 @@ public class FtpProxy extends Thread {
     }
 
     public static void main(String[] args) {
+        // 获取路径
+        if (args.length > 0) {
+            defaultConfigFile = args[0];
+        } else {
+            defaultConfigFile = "/Users/wangxingyu/wxy/ftp-proxy/src/main/java/com/wxy/proxy/ftpproxy.conf";
+        }
         // 加载ftpproxy配置文件
         Properties properties = new Properties();
         try {
