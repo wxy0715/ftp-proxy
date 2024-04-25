@@ -12,7 +12,7 @@
     <artifactId>ftp-proxy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>ftp-proxy</name>
-    <description>ftp-proxy</description>
+    <description>ftp代理服务</description>
     <properties>
         <java.version>8</java.version>
     </properties>
@@ -34,9 +34,18 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!--common-net-->
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.6</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
         </dependency>
     </dependencies>
 
